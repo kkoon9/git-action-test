@@ -42,9 +42,8 @@ jobs:
 
       - name: Github Actions Secret 변수 노출해보기
         run: |  
-          echo "$MY_NAME" > key
-          echo "MY_HOBBY" > key
-        shell: bash
+          echo "$MY_NAME"
+          echo "MY_HOBBY"
         env:
           MY_NAME: ${{secrets.MY_NAME}}
           MY_HOBBY: ${{secrets.MY_HOBBY}}
